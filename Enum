@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+enum Days { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };
+
+int main() {
+    Days today = Thursday;
+
+    if(today == Monday)
+        cout << "Monday";
+    else if(today == Tuesday)
+        cout << "Tuesday";
+    else if(today == Wednesday)
+        cout << "Wednesday";
+    else if(today == Thursday)
+        cout << "Thursday";
+    else if(today == Friday)
+        cout << "Friday";
+    else if(today == Saturday)
+        cout << "Saturday";
+    else if(today == Sunday)
+        cout << "Sunday";
+
+    return 0;
+}
