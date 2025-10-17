@@ -1,0 +1,23 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int arr1[5] = {1, 2, 1, 3, 3};
+    int arr2[5] = {1, 2, 3, 4, 5};
+    int n1 = 5, n2 = 5;
+    int merged[10];
+
+    // Merge arrays
+    for(int i = 0; i < n1; i++)
+        merged[i] = arr1[i];
+    for(int i = 0; i < n2; i++)
+        merged[n1 + i] = arr2[i];
+
+    int total = n1 + n2;
+    sort(merged, merged + total);
+    for(int i = 0; i < total; i++)
+        cout << merged[i] << " ";
+
+    return 0;
+}
